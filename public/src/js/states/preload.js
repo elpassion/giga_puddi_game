@@ -10,6 +10,10 @@ preload.prototype = {
 		this.game.load.image('groundTile', '/src/assets/gfx/tiles/ground.png');
 		this.game.load.image('houses', '/src/assets/gfx/tiles/houses.png');
 		this.game.load.image('player', '/src/assets/gfx/sprites/player.png');
+		this.game.load.spritesheet('nyanCat', '/src/assets/gfx/sprites/nyan_cat.png', 100, 70);
+
+		this.game.load.audio('nyanSong', '/src/assets/audio/nyan_cat_song.mp3');
+		this.game.load.audio('pudiSong', '/src/assets/audio/pudi_puddi_song.mp3');
 	},
 	create: function(){
 		this.game.state.start('GameTitle');
