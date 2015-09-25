@@ -10,8 +10,17 @@ gameTitle.prototype = {
 	addPlayBtn: function (){
 		var playButton = this.game.add.button(this.game.world.centerX, this.game.world.height - 130, 'playBtn', this.playTheGame, this);
 		playButton.anchor.setTo(0.5);
+		this.setPlayAnimation(playButton);
 	},
 	playTheGame: function(){
-		console.log('Start game here');
+		this.game.state.start('TheGame');
+	},
+	setPlayAnimation: function(btn) {
+		btn.onInputOver.add(function (){
+			this.scale.setTo(1.2);
+		}, btn);
+		btn.onInputOut.add(function (){
+			this.scale.setTo(1);
+		}, btn);
 	}
 }

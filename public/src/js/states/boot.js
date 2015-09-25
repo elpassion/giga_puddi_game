@@ -5,7 +5,7 @@ boot.prototype = {
 		game.load.image('loading', '/src/assets/gfx/other/loading.png');
 	},
   	create: function(){
-  		game.stage.backgroundColor = '#FFFFFF';
+  		this.game.stage.backgroundColor = '#FFFFFF';
 		this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
 		this.scale.pageAlignHorizontally = true;
 		this.scale.updateLayout();
