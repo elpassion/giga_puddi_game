@@ -1,5 +1,6 @@
 
 #Giga puddi game
+https://giga-puddi.herokuapp.com/
 
 ###SETUP:
 1. Clone repository
